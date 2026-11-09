@@ -33,6 +33,7 @@ p.lead{font-size:clamp(16px,1.7vw,26px);color:var(--muted);max-width:60ch;line-h
 .slide:first-child h1{font-size:clamp(40px,6vw,100px);max-width:58vw}
 .card img{display:block;width:calc(100% + 3.2vw);margin:-2.4vh -1.6vw 1.4vh;height:17vh;object-fit:cover;border-radius:3px 3px 0 0}
 .kw{display:flex;gap:1.4vw;margin-bottom:3vh;flex-wrap:wrap}
+.kw>div{display:flex;flex-direction:column;align-items:flex-start;max-width:17vw}.kw small{margin-top:1vh;font-size:clamp(12px,1.05vw,17px);line-height:1.35;color:#3b352e;padding-left:.4vw}
 .kw span{font-family:Georgia,serif;font-size:clamp(20px,2.6vw,42px);padding:.5vh 1.6vw;border:1px solid var(--gold);border-radius:40px;color:var(--jade);background:var(--card)}
 .hero{position:absolute;right:0;top:0;bottom:0;width:34vw;background-size:cover;background-position:center;-webkit-mask-image:linear-gradient(90deg,transparent,#000 35%);mask-image:linear-gradient(90deg,transparent,#000 35%);opacity:.9}
 .credit{position:absolute;right:1vw;bottom:5vh;font-size:10px;color:var(--muted)}
@@ -63,7 +64,7 @@ p.lead{font-size:clamp(16px,1.7vw,26px);color:var(--muted);max-width:60ch;line-h
 <!-- 1 TITLE -->
 <section class="slide">
   <div class="hero" style="background-image:url(img/onsen.jpg)"></div>
-  <div class="kw r"><span>Steam</span><span>Spice</span><span>Serenity</span></div>
+  <div class="kw r"><div><span>Steam</span><small>Healing waters: the Great Bath, Japanese onsen, Chinese hot springs</small></div><div><span>Spice</span><small>Healing herbs: Ayurveda in India, herbal medicine in China &amp; Korea</small></div><div><span>Serenity</span><small>Healing the mind: yoga, meditation, Thai massage</small></div></div>
   <div class="kicker r">Health Tourism · Competition</div>
   <h1 class="r">Where wellness <em>began</em></h1>
   <p class="lead r" style="margin-top:3vh">Health tourism in Asia started c. 2500 BCE in the <b>Indus Valley (today Pakistan &amp; India)</b>, then spread to China, Japan, Korea and Thailand.</p>
