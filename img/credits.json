@@ -1,0 +1,98 @@
+[
+ {
+  "key": "greatbath",
+  "file": "greatbath.jpg",
+  "commons": "File:Mohenjodaro_Sindh.jpeg",
+  "article": "Great_Bath,_Mohenjo-daro"
+ },
+ {
+  "key": "epidaurus",
+  "file": "epidaurus.jpg",
+  "commons": "File:Kos_Asklepeion.jpg",
+  "article": "Asclepeion"
+ },
+ {
+  "key": "ayurveda",
+  "file": "ayurveda.jpg",
+  "commons": "File:Dhanvantari-at-Ayurveda-expo.jpg",
+  "article": "Ayurveda"
+ },
+ {
+  "key": "sushruta",
+  "file": "sushruta.jpg",
+  "commons": "File:The_Susruta-Samhita_or_Sahottara-Tantra_(A_Treatise_on_Ayurvedic_Medicine)_LACMA_M.87.271a-g_(1_of_8).jpg",
+  "article": "Sushruta_Samhita"
+ },
+ {
+  "key": "yoga",
+  "file": "yoga.jpg",
+  "commons": "File:Yogasutra_with_Patanjali's_bhasya,_Sanskrit,_Devanagari_script,_random_sample_pages_f1v_f2r_f3v.jpg",
+  "article": "Yoga_Sutras_of_Patanjali"
+ },
+ {
+  "key": "nalanda",
+  "file": "nalanda.jpg",
+  "commons": "File:Temple_No.-_3,_Nalanda_Archaeological_Site.jpg",
+  "article": "Nalanda_mahavihara"
+ },
+ {
+  "key": "neijing",
+  "file": "neijing.jpg",
+  "commons": "File:Koteidaikei_Myodo.jpg",
+  "article": "Huangdi_Neijing"
+ },
+ {
+  "key": "acupuncture",
+  "file": "acupuncture.jpg",
+  "commons": "File:Acupuncture1-1.jpg",
+  "article": "Acupuncture"
+ },
+ {
+  "key": "huaqing",
+  "file": "huaqing.jpg",
+  "commons": "File:Huaqingchi_1.JPG",
+  "article": "Huaqing_Palace"
+ },
+ {
+  "key": "onsen",
+  "file": "onsen.jpg",
+  "commons": "File:Onsen_in_Nachikatsuura,_Japan.jpg",
+  "article": "Onsen"
+ },
+ {
+  "key": "thaimassage",
+  "file": "thaimassage.jpg",
+  "commons": "File:Thaimassage.jpg",
+  "article": "Thai_massage"
+ },
+ {
+  "key": "jjimjilbang",
+  "file": "jjimjilbang.jpg",
+  "commons": "File:Jjimjilbang.JPG",
+  "article": "Jjimjilbang"
+ },
+ {
+  "key": "shimla",
+  "file": "shimla.jpg",
+  "commons": "File:3840px-Landscape_of_Shimla_,_Himachal_Pradesh.jpg",
+  "article": "Shimla"
+ },
+ {
+  "key": "bumrungrad",
+  "file": "bumrungrad.jpg",
+  "commons": "File:Thailand_Bangkok_Bumrungrad_International_Hospital_entrance-building.jpg",
+  "article": "Bumrungrad_International_Hospital"
+ },
+ {
+  "key": "medtour",
+  "file": "medtour.jpg",
+  "commons": "File:3840px-Turismo_de_salud.jpg",
+  "article": "Medical_tourism"
+ },
+ {
+  "key": "bali",
+  "file": "bali.jpg",
+  "commons": "File:3840px-Ubud_(49818456887).jpg",
+  "article": "Ubud"
+ }
+]
