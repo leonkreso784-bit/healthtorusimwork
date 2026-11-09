@@ -32,20 +32,31 @@ canvas{position:fixed;inset:0;width:100%;height:100%;display:block}
 #play button:hover{background:var(--gold);color:var(--bg)}
 #play p{font-family:Georgia,serif;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
 #hint{position:fixed;right:30px;bottom:30px;font:11px Georgia,serif;letter-spacing:.2em;color:rgba(29,26,22,.35);text-transform:uppercase}
+.ph{position:fixed;left:0;right:0;top:0;height:64vh;background-size:cover;background-position:center;opacity:0;transform:scale(1.04);transition:opacity 1.2s ease,transform 9s linear;-webkit-mask-image:linear-gradient(180deg,#000 55%,transparent);mask-image:linear-gradient(180deg,#000 55%,transparent);z-index:1}
+.ph.on{opacity:1;transform:scale(1.14)}
+.scene{z-index:2}
+.s2{margin:.7em auto 0;max-width:62ch;font-family:Georgia,serif;font-size:clamp(14px,1.45vw,22px);line-height:1.45;color:#2b2621}
 </style>
 </head>
 <body>
 <canvas id="c"></canvas>
 <div id="vig"></div>
 <div class="frame"></div>
+<div class="ph" data-p="1" style="background-image:url(img/greatbath.jpg)"></div>
+<div class="ph" data-p="2" style="background-image:url(img/ayurveda.jpg)"></div>
+<div class="ph" data-p="3" style="background-image:url(img/neijing.jpg)"></div>
+<div class="ph" data-p="4" style="background-image:url(img/onsen.jpg)"></div>
+<div class="ph" data-p="5" style="background-image:url(img/thaimassage.jpg)"></div>
+<div class="ph" data-p="6" style="background-image:url(img/bumrungrad.jpg)"></div>
 
-<div class="scene center big" data-i="0"><div class="k">Health Tourism in Asia</div><div class="t">Where Wellness <em>Began</em></div><div class="rule"></div><div class="s">A journey through five thousand years of healing</div></div>
-<div class="scene" data-i="1"><div class="k">c. 2500 BCE &middot; Indus Valley</div><div class="t">The <em>Great Bath</em> of Mohenjo-daro</div><div class="s">Among the oldest public bathing places on Earth</div></div>
-<div class="scene" data-i="2"><div class="k">India</div><div class="t"><em>Ayurveda</em> &amp; Yoga</div><div class="s">&ldquo;The science of life&rdquo; &mdash; balance of body, mind and breath</div></div>
-<div class="scene" data-i="3"><div class="k">c. 200 BCE &middot; China</div><div class="t"><em>Huangdi Neijing</em></div><div class="s">Qi, yin and yang, and the art of acupuncture</div></div>
-<div class="scene" data-i="4"><div class="k">Japan &middot; Onsen</div><div class="t"><em>D&#333;go Onsen</em></div><div class="s">Three thousand years of healing waters</div></div>
-<div class="scene" data-i="5"><div class="k">Thailand &middot; UNESCO Heritage 2019</div><div class="t"><em>Nuad Thai</em></div><div class="s">Traditional Thai massage, a living heritage of touch</div></div>
-<div class="scene" data-i="6"><div class="k">Today</div><div class="t">Asia &mdash; the world&rsquo;s <em>medical &amp; wellness</em> hub</div><div class="s">Thailand &middot; India &middot; Singapore &middot; Malaysia &middot; Korea</div></div>
+
+<div class="scene center big" data-i="0"><div class="k">Health Tourism in Asia</div><div class="t">Where Wellness <em>Began</em></div><div class="rule"></div><div class="s">It started in the Indus Valley &mdash; today Pakistan &amp; India &mdash; c. 2500 BCE</div></div>
+<div class="scene" data-i="1"><div class="k">Where it started &middot; c. 2500 BCE &middot; Indus Valley &middot; today Pakistan &amp; India</div><div class="t">The <em>Great Bath</em> of Mohenjo-daro</div><div class="s">Among the oldest public bathing places on Earth</div><div class="s2">A brick pool sealed with bitumen, read as a place of ritual purification. About 2,000 years before the Greek healing temples.</div></div>
+<div class="scene" data-i="2"><div class="k">India &middot; from c. 1500 BCE</div><div class="t"><em>Ayurveda</em> &amp; Yoga</div><div class="s">&ldquo;The science of life&rdquo; &mdash; balance of body, mind and breath</div><div class="s2">Ayurveda: herbs, diet, massage and cleansing, written down in the Charaka and Sushruta Samhitas. Patanjali's Yoga Sutras join body, breath and mind.</div></div>
+<div class="scene" data-i="3"><div class="k">China &middot; c. 3rd&ndash;1st c. BCE</div><div class="t"><em>Huangdi Neijing</em></div><div class="s">Qi, yin and yang, and the art of acupuncture</div><div class="s2">The Yellow Emperor's Inner Classic: life energy (qi) flows through meridians. Base of Traditional Chinese Medicine; acupuncture is UNESCO heritage since 2010.</div></div>
+<div class="scene" data-i="4"><div class="k">Japan &middot; Onsen</div><div class="t"><em>D&#333;go Onsen</em></div><div class="s">Three thousand years of healing waters</div><div class="s2">Mentioned in Japan's oldest chronicle (720 CE). In the Edo period people travelled for t&#333;ji, weeks-long stays at hot springs to heal.</div></div>
+<div class="scene" data-i="5"><div class="k">Thailand &middot; UNESCO Heritage 2019</div><div class="t"><em>Nuad Thai</em></div><div class="s">Traditional Thai massage, a living heritage of touch</div><div class="s2">Traced to Jivaka, physician of the Buddha. In the 1830s King Rama III had its knowledge carved in stone at Wat Pho temple in Bangkok.</div></div>
+<div class="scene" data-i="6"><div class="k">Today</div><div class="t">Asia &mdash; the world&rsquo;s <em>medical &amp; wellness</em> hub</div><div class="s">Thailand &middot; India &middot; Singapore &middot; Malaysia &middot; Korea</div><div class="s2">After the 1997 crisis hospitals like Bumrungrad turned to foreign patients. In 2024 Asia-Pacific became the largest wellness tourism region: about 560 million trips.</div></div>
 <div class="scene center" data-i="7"><div class="k">Health Tourism in Asia</div><div class="t" style="font-size:clamp(28px,3.6vw,56px)">Where Wellness <em>Began</em></div><div class="rule"></div><div class="names">Leon Kreso<b>&middot;</b>Abreham Gonzalez<b>&middot;</b>Lucia Perez</div></div>
 
 <div id="bar"></div>
@@ -56,7 +67,7 @@ canvas{position:fixed;inset:0;width:100%;height:100%;display:block}
 (function(){
 "use strict";
 var C={bg:'#f6f1e7',ink:'#1d1a16',gold:'#b8892b',jade:'#2f6f5e',verm:'#b5452b'};
-var DUR=[6,5.6,5.6,5.6,5.6,5.6,6.2,6.5]; // ~46.7 s
+var DUR=[6,8.5,8.5,8.5,8.5,8.5,8.5,6.5]; // ~46.7 s
 var START=[],TOTAL=0;DUR.forEach(function(d){START.push(TOTAL);TOTAL+=d;});
 var XF=1.2;
 var cv=document.getElementById('c'),ctx=cv.getContext('2d');
@@ -181,7 +192,7 @@ function frame(now){requestAnimationFrame(frame);var dt=Math.min(.05,(now-last)/
  if(playing){T+=dt;if(T>=TOTAL){T=TOTAL;if(!ended){ended=true;audioEnd();try{parent!==window&&parent.postMessage('intro-ended','*');}catch(e){}}}}
  if(!started)return;
  var i=sceneAt(Math.min(T,TOTAL-0.001));
- if(i!==cur){cur=i;scenesEl.forEach(function(el,k){el.classList.toggle('on',k===i);});}
+ if(i!==cur){cur=i;scenesEl.forEach(function(el,k){el.classList.toggle('on',k===i);});[].forEach.call(document.querySelectorAll('.ph'),function(p){p.classList.toggle('on',+p.dataset.p===i);});}
  ctx.globalAlpha=1;ctx.fillStyle=C.bg;ctx.fillRect(0,0,W,H);
  var lt=T-START[i];var ain=i===0?Math.min(1,lt/1.5):Math.min(1,lt/XF);
  if(i>0&&lt<XF)R[i-1](lt+DUR[i-1],1-ain);
